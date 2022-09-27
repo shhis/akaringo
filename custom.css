@@ -12,25 +12,28 @@
 }  
 
 
-/*- pet -*/
 
-a img {
-    width: 15%;
-    position: relative;
-}
-a img:last-child {
+
+
+
+
+
+
+
+/*- pet 
+.ngo img:last-child {
     display: none;  
   }
-
-  a:hover img:last-child {
+  
+.ngo:hover img:last-child {
     display: block;  
   }
   
-  a:hover img:first-child {
+.ngo:hover img:first-child {
     display: none;  
   }
 
-/*------------------------------------
+-------------------------------
 - COLOR primary
 
 https://lingtalfi.com/bootstrap4-color-generator#
