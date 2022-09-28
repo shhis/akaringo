@@ -16,6 +16,8 @@
 
     <title>akaringo beloved</title>
     <meta name="description" content="i fucking love akari tsujino">
+    <link rel="icon" href="https://cdn.discordapp.com/attachments/934565959711207526/1024692879932792953/unknown.png">
+
 </head>
 
 <body style="font-family:Patrick Hand" class="bg-white">
@@ -70,7 +72,7 @@
   
 
   <!--- grid start --->
-  <div class="row d-flex m-auto h-100">
+  <div class="row d-flex my-auto h-100 mx-4">
 
 
   <!--- col 1 --->
@@ -80,7 +82,9 @@
         
 
   <!--- carrossel --->
-    <div class="d-flex center my-auto mx-2">
+    <div class="d-flex center my-auto mx-auto">
+
+      
       <div class="carousel center m-auto border border-3"  height="100" id="carouselExampleControls" data-interval="false">
         
         <div class="carousel-inner position-relative m-auto">
@@ -182,16 +186,14 @@
 
 
     <!--- col 2 --->
-    <div class="col "style="max-width: 1rem;">
-      
-      <div class="vr my-2 h-100" style></div>
-
+    <div class="col d-flex flex-column m-auto" style="max-width: 1rem;">
+      <div class="vr"></div>
     </div>
 
     <!--- col 3 --->
     <div class="col border border-3 m-2">
 
-      <div class="d-flex center">
+      <div class="d-flex m-2">
       
         <!--- video + container--->
           <div class="card d-flex mx-auto fa-2xl border-0">
@@ -201,12 +203,12 @@
           </div>
 
            <div class="carousel mx-auto" id="mutecarousel" data-interval="false">
-            <div class="carousel-item active">
+            <div class="carousel-item active controls">
               <i class="fa-solid fa-pause" type="button" data-bs-target="#mutecarousel" data-bs-slide="next"
                onclick="pauseVid()"></i>
             </div>
 
-            <div class="carousel-item">
+            <div class="carousel-item controls">
               <i class="fa-solid fa-play" type="button" data-bs-target="#mutecarousel" data-bs-slide="next"
                onclick="playVid()"></i>
           </div>
@@ -226,13 +228,13 @@
            <img src="https://cdn.discordapp.com/attachments/934565959711207526/1024463368695857182/unknown.png" height="150" alt="akaringo chibi right">
 
             </div>
-           <div class="carousel mx-auto" id="playcarousel" data-interval="false">
-            <div class="carousel-item active">
+           <div class="carousel carousel-fade mx-auto" id="playcarousel" data-interval="false">
+            <div class="carousel-item active controls">
               <i class="fa-solid fa-volume-up" type="button" data-bs-target="#playcarousel" data-bs-slide="next"
                onclick="disableMute()"></i>
           </div>
                 
-          <div class="carousel-item">
+          <div class="carousel-item controls">
             <i class="fa-solid fa-volume-mute" type="button" data-bs-target="#playcarousel" data-bs-slide="next"
              onclick="enableMute()"></i>
           </div>
@@ -241,9 +243,49 @@
             </div>
           </div>
 
-          <br>
+
+            <br>
+
+          <div class="d-flex mx-auto">
+
+            <ul class="fa-ul mx-auto text-center"> 
+              <li class="mx"><span class="fa-li"><i class="fa-solid fa-apple-whole"></i></i></span>Tokimeki wa Akakute Amai</li>
+              <li class="mx"><span class="fa-li"><i class="fa-solid fa-apple-whole"></i></i></span>Brand new!</li>
+              <li class="mx"><span class="fa-li"><i class="fa-solid fa-apple-whole"></i></i></span>Wish you Happiness!!</li>
+            </ul>   
+            
+            <ul class="fa-ul mx-auto text-center">
+              <li class="mx"><span class="fa-li"><i class="fa-solid fa-apple-whole"></i></i></span>Home Sweet Home</li>
+              <li class="mx"><span class="fa-li"><i class="fa-solid fa-apple-whole"></i></i></span>EVERLASTING</li>
+              <li class="mx"><span class="fa-li"><i class="fa-solid fa-apple-whole"></i></i></span>UNIQU3 VOICES!!!</li>
+            </ul>
+
+          </div>
 
           <hr class="w-75 mx-auto">
+
+
+            <div class="d-flex m-auto">
+
+              <h3 class="m-auto" style="font-family: Rampart One;">
+              <i class="fa-solid fa-apple-whole mx-1"></i>
+              Latest Card
+              <i class="fa-solid fa-apple-whole mx-1"></i>
+            </h3>
+            </div>
+
+            <div class="card mx-auto border-0 mt-1">
+              <div class="card-title d-flex mx-auto">
+
+                  <img width="200" class="mx-1 card-title"
+                  src="https://i.cinderella.pro/u/c/art/101153SR-Tsujino-Akari.png" alt="UNICUS akaringo untrained">
+                  <img width="200" class="mx-1 card-title"
+                src="https://i.cinderella.pro/u/c/art/a/101153SR-Tsujino-Akari.png" alt="UNICUS akaringo trained">
+    
+              </div>
+              <h6 class="mx-auto card-title">20/9/2022</h6>
+
+            </div>
 
     </div>
 
