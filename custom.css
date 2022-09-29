@@ -11,11 +11,13 @@
     animation: linear infinite;
 }  
 
+
 .controls {
   transition: transform 0s;
 	-webkit-animation: jello-horizontal 0.5s ease-in-out both;
 	        animation: jello-horizontal 0.5s ease-in-out both;
 }
+
 
 
 /**
@@ -86,18 +88,7 @@
 
 
 
-/*- pet 
-.ngo img:last-child {
-    display: none;  
-  }
-  
-.ngo:hover img:last-child {
-    display: block;  
-  }
-  
-.ngo:hover img:first-child {
-    display: none;  
-  }
+/*- 
 
 -------------------------------
 - COLOR primary
