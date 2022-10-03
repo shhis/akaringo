@@ -20,10 +20,10 @@
 
 </head>
 
-<body style="font-family:Patrick Hand" class="bg-white">
+<body style="font-family:Patrick Hand">
 
   <!--- marquee --->
-  <div class="bg-danger w-100">
+  <div class="w-100">
     <marquee scrollamount="12" class="text-white" style="font-family:Rampart One">
         一番のりんごはなにりんご? 
         ピカピカに磨かれた　おめかしで誤魔化しても 
@@ -69,14 +69,14 @@
   </div>
 
   <br>
-  
+  <br>
 
   <!--- grid start --->
   <div class="row d-flex my-auto h-100 mx-4">
 
 
   <!--- col 1 --->
-    <div class="col border border-3 m-2">
+    <div class="col parent position-relative m-2">
 
       <div class="d-flex m-2">
         
@@ -85,7 +85,7 @@
     <div class="d-flex center m-auto">
 
       
-      <div class="carousel center m-auto border border-3"  height="100" id="carouselExampleControls" data-interval="false">
+      <div class="carousel center m-auto"  height="100" id="carouselExampleControls" data-interval="false">
         
         <div class="carousel-inner position-relative m-auto">
           <div class="carousel-item active">
@@ -147,7 +147,7 @@
 
         <hr class="w-75 mx-auto">
 
-      <div class="d-flex position-relative">
+      <div class="d-flex">
         
         
     <!--- list --->
@@ -163,33 +163,35 @@
           
         <hr class="w-75 mx-auto">
 
-          <p style="margin-left: -1.5rem; margin-right: 53.125%;"> An honest and friendly country girl who loves ramen and apples, both being her hometown's specialty products.
+          <p class="overflow-auto" style="margin-left: -1.5rem; margin-right: 53.125%;"> An honest and friendly country girl who loves ramen and apples, both being her hometown's specialty products.
              She grew up on her family's apple farm, giving herself the nickname "Akaringo" at a young age.
              <br>
              After moving to Tokyo, Akari decided to hide her Yamagata dialect as she finds it uncute, but it occasionally slips when she is flustered or excited. 
              She usually ends her sentences with "-ngo," thinking this quirk would make her popular in the city.
-             
+
           </p>
         </ul>
 
-        <div class="wrapper" style="height:100%;"></div>
-        
+        <div class="container child" style="height:75%;">
+                  
     <!--- pagedoll --->
         <img class="position-absolute h-100" style="left: 47.5%;" 
         src="https://cdn.discordapp.com/attachments/934565959711207526/1024063490283024425/unknown.png" alt="akaringo png">
         
+        </div>
+
       </div>
 
     </div>
 
 
     <!--- col 2 --->
-    <div class="col d-flex flex-column m-auto" style="max-width: 1rem;">
+    <div class="col d-flex flex-column m-auto tinyboy" style="max-width: 1rem;">
       <div class="vr"></div>
     </div>
 
     <!--- col 3 --->
-    <div class="col border border-3 m-2">
+    <div class="col m-2">
 
       <div class="d-flex m-2">
       
@@ -218,7 +220,7 @@
           
           <!--- video --->
             <video autoplay loop muted disablePictureInPicture id="ringotime"
-            class="mx-auto mt-2 embed-responsive-item border border-3" height="200" width="auto"
+            class="mx-auto mt-2 embed-responsive-item" height="200" 
             src=""></video>
 
 
@@ -243,27 +245,41 @@
             </div>
           </div>
 
-
             <br>
 
-          <div class="d-flex mx-auto" id="playlist">
+          <div class="songlist d-flex mx-auto" id="playlist">
 
             <ul class="fa-ul mx-auto text-center"> 
-              <li class="mx" movieurl="https://github.com/shhis/akaringo/blob/main/videos/akaringosolo.mp4?raw=true"> <span class="fa-li"> <i class="fa-solid fa-apple-whole"></i></span>
-                Tokimeki wa Akakute Amai</li>
-              <li class="mx" movieurl="https://github.com/shhis/akaringo/blob/main/videos/brandnew.mp4?raw=true"><span class="fa-li"><i class="fa-solid fa-apple-whole"></i></span>
-                Brand new!</li>
-              <li class="mx" movieurl="https://github.com/shhis/akaringo/blob/main/videos/wishyou.mp4?raw=true" ><span class="fa-li"><i class="fa-solid fa-apple-whole"></i></span>
-                Wish you Happiness!!</li>
+              <li class="mx" movieurl="https://github.com/shhis/akaringo/blob/main/videos/akaringosolo.mp4?raw=true"><span class="fa-li">
+                <i class="fa-solid fa-apple-whole"></i></span>
+                <a class="active"> Tokimeki wa Akakute Amai </a>
+              </li>
+
+              <li class="mx" movieurl="https://github.com/shhis/akaringo/blob/main/videos/brandnew.mp4?raw=true"><span class="fa-li">
+                <i class="fa-solid fa-apple-whole"></i></span>
+                <a> Brand new! </a>
+              </li>
+
+              <li class="mx" movieurl="https://github.com/shhis/akaringo/blob/main/videos/wishyou.mp4?raw=true" ><span class="fa-li">
+                <i class="fa-solid fa-apple-whole"></i></span>
+                <a> Wish you Happiness!! </a>
+              </li>
+
             </ul>   
             
             <ul class="fa-ul mx-auto text-center">
               <li class="mx" movieurl="https://github.com/shhis/akaringo/blob/main/videos/homesweethome.mp4?raw=true"><span class="fa-li"><i class="fa-solid fa-apple-whole"></i></span>
-                Home Sweet Home</li>
+                <a> Home Sweet Home </a>
+                </li>
+
               <li class="mx" movieurl="https://github.com/shhis/akaringo/blob/main/videos/everlasting.mp4?raw=true"><span class="fa-li"><i class="fa-solid fa-apple-whole"></i></span>
-                EVERLASTING</li>
+              <a> EVERLASTING </a>
+
+              </li>
               <li class="mx" movieurl="https://github.com/shhis/akaringo/blob/main/videos/unibo.mp4?raw=true" ><span class="fa-li"><i class="fa-solid fa-apple-whole"></i></span>
-                UNIQU3 VOICES!!!</li>
+              <a> UNIQU3 VOICES!!! </a>
+              </li>
+
             </ul>
 
           </div>
@@ -283,13 +299,15 @@
             <div class="card mx-auto border-0 mt-1">
               <div class="card-title d-flex mx-auto">
 
-                  <img width="200" class="mx-1 card-title"
+                  <img width="200" class="mx-1 my-auto card-title"
                   src="https://i.cinderella.pro/u/c/art/101153SR-Tsujino-Akari.png" alt="UNICUS akaringo untrained">
-                  <img width="200" class="mx-1 card-title"
+                  <img width="200" class="mx-1 my-auto card-title"
                 src="https://i.cinderella.pro/u/c/art/a/101153SR-Tsujino-Akari.png" alt="UNICUS akaringo trained">
     
               </div>
-              <h6 class="mx-auto card-body">20/9/2022</h6>
+              <div class="card-body d-flex mx-auto"> 
+                <h6>
+                UNIQU3 VOICES!!! <span class="mx-1">-</span> 20/9/2022</h6>
 
             </div>
 
@@ -297,7 +315,26 @@
 
   </div>
 
+  <a href="https://cinderella.pro/cards/?idol=331" >
+    <img class="ringorou"  height="60" width="auto"
+    data-toggle="tooltip" title="Go to Card Database?"
+    src="https://cdn.discordapp.com/attachments/933809344389206148/1026507275407466596/unknown.png" alt="ringorou pagedoll">
+  
+  </a>
+  
   <script> 
+
+var song = document.querySelectorAll('.songlist ul li a');
+song.forEach(function (element) {
+  element.addEventListener('click', function (e) {
+
+    song.forEach(function (element) {
+      element.classList.remove('active');
+    });
+    this.classList.add('active');
+  });
+});
+
     var vid = document.getElementById("ringotime"); 
     
     function playVid() { 
@@ -330,6 +367,10 @@
     })
     
     })
+    
+    $(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})
     
     
     </script> 
