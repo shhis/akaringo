@@ -3,7 +3,5 @@
  </h1> 
 
 <h3 align="center"> To Add </h2>
-<p> 
- <li align="center"> Intro/Load Animation </li>
- <li align="center"> Mobile Version </li>
- </p>
+<p> <li align="center"> Intro/Load Animation </li>
+ <li align="center"> Mobile Version </li> </p>
