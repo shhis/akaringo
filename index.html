@@ -17,11 +17,15 @@
     <title>akaringo beloved</title>
     <meta name="description" content="i fucking love akari tsujino">
     <link rel="icon" href="https://cdn.discordapp.com/attachments/934565959711207526/1024692879932792953/unknown.png">
-
 </head>
 
-<body style="font-family:Patrick Hand">
+<body onload="loadfun()" style="font-family:Patrick Hand">
 
+
+  <div id="loader"></div>
+
+<div id="ringoload">
+  
   <!--- marquee -->
   <div class="w-100">
     <marquee scrollamount="12" class="text-white" style="font-family:Rampart One">
@@ -66,9 +70,8 @@
 
     </marquee>
   </div>
+  <br>
 
-  <br>
-  <br>
 
   <!--- grid start -->
   <div class="row d-flex my-auto h-100 mx-4">
@@ -320,62 +323,70 @@
     src="https://cdn.discordapp.com/attachments/933809344389206148/1026507275407466596/unknown.png" alt="ringorou pagedoll">
   
   </a>
-  
-  <script> 
-
-var song = document.querySelectorAll('.songlist ul li a');
-song.forEach(function (element) {
-  element.addEventListener('click', function (e) {
-
-    song.forEach(function (element) {
-      element.classList.remove('active');
-    });
-    this.classList.add('active');
-  });
-});
-
-    var vid = document.getElementById("ringotime"); 
-    
-    function playVid() { 
-      vid.play(); 
-    } 
-    
-    function pauseVid() { 
-      vid.pause(); 
-    } 
-
-    function enableMute() { 
-      vid.muted = true;
-    } 
-
-    function disableMute() { 
-      vid.muted = false;
-    } 
-
-
-    $(function() {
-    $("#playlist li").on("click", function() {
-        $("#ringotime").attr({
-            "src": $(this).attr("movieurl"),
-        })
-    })
-
-    $("#ringotime").attr({
-        "src": $("#playlist li").eq(0).attr("movieurl"),
-
-    })
-    
-    })
-    
-    $(function () {
-  $('[data-toggle="tooltip"]').tooltip()
-})
-    
-    
-    </script> 
-
 
   </div>
+</div>
 
+  <script> 
+
+    var song = document.querySelectorAll('.songlist ul li a');
+    song.forEach(function (element) {
+      element.addEventListener('click', function (e) {
+    
+        song.forEach(function (element) {
+          element.classList.remove('active');
+        });
+        this.classList.add('active');
+      });
+    });
+    
+        var vid = document.getElementById("ringotime"); 
+        
+        function playVid() { 
+          vid.play(); 
+        } 
+        
+        function pauseVid() { 
+          vid.pause(); 
+        } 
+    
+        function enableMute() { 
+          vid.muted = true;
+        } 
+    
+        function disableMute() { 
+          vid.muted = false;
+        } 
+    
+    
+        $(function() {
+        $("#playlist li").on("click", function() {
+            $("#ringotime").attr({
+                "src": $(this).attr("movieurl"),
+            })
+        })
+    
+        $("#ringotime").attr({
+            "src": $("#playlist li").eq(0).attr("movieurl"),
+    
+        })
+        
+        })
+        
+        $(function () {
+      $('[data-toggle="tooltip"]').tooltip()
+    })
+        
+
+    var loadvar;
+    function loadfun() {
+      loadvar = setTimeout(showPage, 3000);
+    }
+    
+    function showPage() {
+      document.getElementById("loader").style.display = "none";
+      document.getElementById("ringoload").style.display = "block";
+    }
+        </script> 
 </body>
 </html>
