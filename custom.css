@@ -11,14 +11,15 @@
 }
 
 body{
-  background-image:url("https://cdn.discordapp.com/attachments/934565959711207526/1026646681640513536/patternpinklight.png") ;
+  background-color: #fff;
+  background-image:url("https://cdn.discordapp.com/attachments/934565959711207526/1030263277328011355/unknown.png");
   color: #990D35;
 }
 
 marquee {
-  background-color: #D52941;
+  position: relative;
   animation: linear infinite;
-
+  background-color: #D52941;
 }  
 
 
@@ -101,9 +102,12 @@ hr {
 }
 
 .child {
+  height: 30vmax;
   position: absolute;
   bottom: 0;
+  left: 47.5%;
   filter: drop-shadow(1px 0px 0 #D52941);
+ 
 
 }
 
