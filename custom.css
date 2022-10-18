@@ -62,6 +62,7 @@ marquee {
 }
 
 video {
+  width: 50%;
   border-style: solid;
   border-width: 1px;
   border-color: #D52941;
@@ -69,15 +70,17 @@ video {
 
 }
 
+hr {
+  color: #990D35;
+}
+
+
 .tinyboy {
   background: none;
   box-shadow: 0 0 0;
   border-width: 0px;
 }
 
-hr {
-  color: #990D35;
-}
 
 .carousel-item {
   border-style: solid;
@@ -111,9 +114,11 @@ hr {
 
 }
 
-.card {
-  background: none;
+.flex-column {
+  justify-content: space-between;
 }
+
+
 
 .ringorou {
   position: fixed;
